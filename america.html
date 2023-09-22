@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikifood</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquer.js"></script>
+    <script src="jseasy.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#imagenescategorias").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+    $("#imagenescategorias1").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias1").mouseout(function(){
+        $(this).animate({
+            opacity: .6
+        },500)
+    });
+    $("#imagenescategorias2").mouseover(function(){
+        $(this).animate({
+            opacity:1
+        },500)
+        });
+        $("#imagenescategorias2").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+     //recetas-animacion
+    //receta1-arrozconpollo
+    $("#receta1").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta2-Arepas
+    $("#receta2").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta3
+    $("#receta3").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+    //confingbotones
+    $("#textosreceta").hide();
+    $("#video1").hide();
+    $("#textosreceta1").hide();
+    $("#video2").hide();
+    $("#textosreceta2").hide();
+    $("#video3").hide();
+
+    $("#receta1").click(function(){
+        $("#video0").hide();
+        $("#textoreceta0").hide();
+        $("#video1").fadeIn(3000);
+        $("#textosreceta").fadeIn(3000);
+        $("#textosreceta1").hide();
+        $("#video2").hide();
+        $("#textosreceta2").hide();
+        $("#video3").hide();
+    });
+    $("#receta2").click(function(){
+        $("#video0").hide();
+        $("#textosreceta").hide();
+        $("#video1").hide();
+        $("#textoreceta2").hide();
+        $("#video3").hide();
+        $("#textoreceta0").hide();
+        $("#video2").fadeIn(3000);
+        $("#textosreceta1").fadeIn(3000);
+
+    });
+    $("#receta3").click(function(){
+        $("#video0").hide();
+        $("#textosreceta").hide();
+        $("#video1").hide();
+        $("#textosreceta1").hide();
+        $("#video2").hide();
+        $("#textoreceta0").hide();
+        $("#video3").fadeIn(3000);
+        $("#textosreceta2").fadeIn(3000);
+
+    });
+});
+    </script>
+    </script>
+        <style>
+            #imagenescategorias{
+                opacity: .6;
+            }
+            #imagenescategorias1{
+                opacity: .6;
+            }
+            #imagenescategorias2{
+                opacity: .6;
+            }
+            #receta1{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+        img{
+            margin-top: 20px;
+        }
+        #receta2{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        #receta3{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="contenedorrespon">
+        <header>
+            <nav>
+                <a class="botoneshead" href="index.html">Inicio</a>
+            </nav>
+            <section class="textoshead">
+                <h1>Aprende sobre el mundo de la gastronomia</h1>
+                <h2>atrevete a explorar nuevos sabores</h2>
+            </section>
+        </header>
+        <main>
+            <h1 class="titulo">Gastronomia Latina</h1>
+            <section class="contendor">
+                <p id="textointro">En nuestra sección dedicada a la gastronomía latinoamericana, te sumergirás en un universo culinario repleto de sabores vibrantes y tradiciones arraigadas. Pero nuestro enfoque especial recae en la riqueza de la comida colombiana.
+
+                    Colombia es un país de contrastes, y esto se refleja maravillosamente en su cocina. Desde las costas caribeñas hasta las montañas de los Andes, cada región ofrece una variedad de platos únicos que se han transmitido de generación en generación. En nuestra página, te llevaremos a un viaje a través de los sabores de Colombia.
+                    
+                    Descubre la frescura y la explosión de sabores en el ceviche de camarones de la costa atlántica, o adéntrate en las montañas para probar la deliciosa bandeja paisa, una abundante combinación de carne, arroz, frijoles y plátano frito. ¿Tienes un diente dulce? Entonces, no te pierdas la oportunidad de probar el arequipe, el dulce de leche colombiano, o los buñuelos, bolitas de masa fritas que son irresistibles.
+                    
+                    Prepárate para explorar la diversidad de la cocina colombiana a través de nuestras recetas auténticas y los relatos de sus orígenes. ¡Esperamos que te sumerjas en este viaje culinario lleno de sabor y tradición!</p>
+            </section>
+            <h1 class="titulo">Recetas</h1>
+            <section id="principal_contendor1">
+                <div id="botones_recetas">
+                    <div id="recetas">
+                        <h2 class="sub-titulo">Receta #1</h2>
+                        <img src="Arroz-con-pollo.jpg" id="receta1">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #2</h2>
+                        <img src="arepas.avif" id="receta2">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #3</h2>
+                        <img src="sancocho.jpg" id="receta3">
+                    </div>
+                </div>
+                <div id="contenido_recetas">
+                    <div id="video">
+                        <iframe id="video0" width="460" height="315" src="https://www.youtube.com/embed/tRAZVGa1nrU?si=m8UVflvTK5FdafsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video1" width="460" height="315" src="https://www.youtube.com/embed/Legx2aAvHNQ?si=ErAtRt9tj8uFV6ce" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video2" width="460" height="315" src="https://www.youtube.com/embed/LRAZfDiet9Y?si=BIbIbWk6LbnY8SDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video3" width="460" height="315" src="https://www.youtube.com/embed/DPr7wRpkpLc?si=fT2Zf1hA_i0Fc9vE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div id="lista_ingredientes">
+                        <p id="textoreceta0">La comida latinoamericana es una verdadera sinfonía de sabores, una explosión de colores y una experiencia culinaria que encanta a todos los sentidos. Desde México hasta Argentina, y en todos los países intermedios, la cocina latinoamericana es un tesoro gastronómico que deleita a las papilas gustativas de todo el mundo.
+
+                            Imagina saborear un auténtico taco mexicano, con su carne tierna y su salsa picante, o disfrutar de un suculento asado argentino con chimichurri casero. ¿Te apetece algo más exótico? Prueba el ceviche fresco de Perú o el sabor ahumado de la comida criolla cubana.
+                            
+                            La comida latinoamericana es una celebración de ingredientes frescos y sabores audaces. Desde los tamales y las empanadas hasta los plátanos maduros y el arroz con frijoles, cada bocado es una invitación a un viaje culinario lleno de sorpresas y deleite.</p>
+                    <p id="textosreceta">Ingredientes:
+        
+                        1 cucharada de aceite de oliva
+                        1 cebolla mediana, picada
+                        2 dientes de ajo, picados
+                        1/2 pimiento rojo, picado
+                        1/2 pimiento verde, picado
+                        1/2 taza de arroz blanco
+                        2 tazas de caldo de pollo
+                        1/2 cucharadita de comino molido
+                        1/2 cucharadita de orégano seco
+                        1/4 cucharadita de sal
+                        1/4 cucharadita de pimienta negra molida
+                        1 pechuga de pollo cocida y desmenuzada</p>
+                    <p id="textosreceta1">
+                        Ingredientes:
+            
+            1 taza de harina de maíz precocida
+            1/2 taza de agua tibia
+            1 cucharadita de sal
+            1/2 cucharadita de azúcar
+            1/2 cucharadita de aceite vegetal
+            1/4 taza de queso blanco rallado (opcional)
+                    </p>
+                    <p id="textosreceta2">
+                        Ingredientes:
+
+    1 libra de carne de res, pollo o cerdo, cortada en trozos
+    1/2 taza de cebolla picada
+    2 dientes de ajo picados
+    1/2 cucharadita de comino molido
+    1/2 cucharadita de orégano seco
+    1/4 cucharadita de sal
+    1/4 cucharadita de pimienta negra molida
+    1/2 taza de cilantro picado
+    1 libra de yuca, pelada y cortada en trozos
+    1 libra de plátano verde, pelado y cortado en trozos
+    1 libra de papa, pelada y cortada en trozos
+    1/2 taza de mazorca de maíz, desgranada
+    1/2 taza de agua
+
+                    </p>
+                    </div>
+                </div>
+            </section>
+       
+        <h2 class="titulo">Categorias</h2>
+        <section class="categorias">
+            <div class="contenedor_categorias">
+                <a href="america.html"><img id="imagenescategorias" src="plato-Bandeja-Paisa-1024x583.jpg" alt="">
+                    <h4>Cocina Latina</h4>
+                </a>
+                <a href="europa.html"><img id="imagenescategorias1" src="spanish_tapas_on_wooden_table_2.adaptive.767.1683103520005.jpg" alt="">
+                    <h4>Cocina Europea</h4>
+                </a>
+                <a href="asia.html"><img id="imagenescategorias2" src="Sushi-854x443.jpg" alt="">
+                    <h4>Cocina Asiatica</h4>
+                </a>
+                
+            </div>
+        </section>
+        </main>
+    </div>
+    <footer>
+        <p id="tel">Telefono</p>
+        <p>3053115679</p>
+        <p>Correo</p>
+        <p>Ikifood@gmail.com</p>
+        <p>Direccion</p>
+        <p>Calle 15 #109-89</p>
+    </footer>
+</body>
+</html>

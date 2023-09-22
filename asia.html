@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikifood</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquer.js"></script>
+    <script src="jseasy.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#imagenescategorias").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+    $("#imagenescategorias1").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias1").mouseout(function(){
+        $(this).animate({
+            opacity: .6
+        },500)
+    });
+    $("#imagenescategorias2").mouseover(function(){
+        $(this).animate({
+            opacity:1
+        },500)
+        });
+        $("#imagenescategorias2").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+     //recetas-animacion
+    //receta1-arrozconpollo
+    $("#receta1").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta2-Arepas
+    $("#receta2").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta3
+    $("#receta3").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+    //confingbotones
+    $("#textosreceta").hide();
+    $("#video1").hide();
+    $("#textosreceta1").hide();
+    $("#video2").hide();
+    $("#textosreceta2").hide();
+    $("#video3").hide();
+
+    $("#receta1").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video1").fadeIn(3000);
+        $("#textosreceta").fadeIn(3000);
+        $("#textosreceta1").hide();
+        $("#video2").hide();
+        $("#textosreceta2").hide();
+        $("#video3").hide();
+    });
+    $("#receta2").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textosreceta").fadeOut(1000);
+        $("#video1").fadeOut(1000);
+        $("#textoreceta2").fadeOut(1000);
+        $("#video3").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video2").fadeIn(3000);
+        $("#textosreceta1").fadeIn(3000);
+
+    });
+    $("#receta3").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textosreceta").fadeOut(1000);
+        $("#video1").fadeOut(1000);
+        $("#textosreceta1").fadeOut(1000);
+        $("#video2").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video3").fadeIn(3000);
+        $("#textosreceta2").fadeIn(3000);
+
+    });
+});
+    </script>
+    </script>
+        <style>
+            #imagenescategorias{
+                opacity: .6;
+            }
+            #imagenescategorias1{
+                opacity: .6;
+            }
+            #imagenescategorias2{
+                opacity: .6;
+            }
+            #receta1{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+        img{
+            margin-top: 20px;
+        }
+        #receta2{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        #receta3{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="contenedorrespon">
+        <header>
+            <nav>
+                <a class="botoneshead" href="index.html">Inicio</a>
+            </nav>
+            <section class="textoshead">
+                <h1>Aprende sobre el mundo de la gastronomia</h1>
+                <h2>atrevete a explorar nuevos sabores</h2>
+            </section>
+        </header>
+        <main>
+            <h1 class="titulo">Gastronomia Asiatica</h1>
+            <section class="contendor">
+                <p id="textointro">La gastronomía asiática es una maravillosa obra maestra de sabores, aromas y tradiciones culinarias que ha cautivado a paladares de todo el mundo. Este vasto continente ofrece una diversidad culinaria sin igual, con platos que varían desde picantes y exóticos hasta suaves y reconfortantes. La comida asiática es una ventana a la riqueza de las culturas que la componen, y cada plato cuenta una historia única.
+
+                    Desde los tentadores sabores de la comida china, con sus dumplings al vapor y pato a la pekinesa, hasta la complejidad de la gastronomía tailandesa, con su equilibrio perfecto entre dulce, picante, ácido y salado en platos como el curry de coco y la ensalada de papaya. Japón ofrece la elegancia y la precisión de la cocina japonesa, con su sushi fresco y sashimi de calidad.
+                    
+                    La India sorprende con sus currys aromáticos, el tandoori y una explosión de especias que estimulan los sentidos. En Corea, el bulgogi y el kimchi son ejemplos de una cocina vibrante y llena de sabor. Y no podemos olvidar el sabor umami de la comida japonesa, que ha llevado al sushi y al ramen a los rincones más remotos del mundo.
+                    
+                    La comida asiática no solo es deliciosa, sino que también es una expresión de las culturas y la historia de la región. Los ingredientes frescos, las técnicas culinarias cuidadosamente perfeccionadas y la atención al detalle hacen que cada comida sea una experiencia única. Ya sea que te adentres en un mercado callejero en Bangkok, te sientes en un restaurante de sushi en Tokio o cocines en casa, la comida asiática te lleva en un viaje culinario inolvidable.</p>
+            </section>
+            <h1 class="titulo">Recetas</h1>
+            <section id="principal_contendor1">
+                <div id="botones_recetas">
+                    <div id="recetas">
+                        <h2 class="sub-titulo">Receta #1</h2>
+                        <img src="sushi.png" id="receta1">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #2</h2>
+                        <img src="curry.webp" id="receta2">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #3</h2>
+                        <img src="dumplin.jpg" id="receta3">
+                    </div>
+                </div>
+                <div id="contenido_recetas">
+                    <div id="video">
+                        <iframe id="video0" width="460" height="315" src="https://www.youtube.com/embed/dx4NEDENiHs?si=8YNTI8varC4D-0yq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video1" width="460" height="315" src="https://www.youtube.com/embed/D2gWau1l-sk?si=6t8xYA8Dw1lF4D1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video2" width="460" height="315" src="https://www.youtube.com/embed/qaoKiH_2Fzo?si=UULLG7pWtpHz-_Ln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video3" width="460" height="315" src="https://www.youtube.com/embed/NIZQH08KY7U?si=lfLQKbh84TYErG7u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div id="lista_ingredientes">
+                        <p id="textoreceta0">La comida asiática es un auténtico deleite para los sentidos, una explosión de sabores, aromas y texturas que lleva a los comensales a un viaje culinario inolvidable. La riqueza y diversidad de la gastronomía asiática es simplemente asombrosa, y cada plato es una obra de arte culinaria que encanta tanto a los paladares aventureros como a los más tradicionales.
+
+                            Imagina el primer bocado de sushi, donde la frescura del pescado se combina con la suavidad del arroz y la intensidad del wasabi y la salsa de soja. Siente la explosión de sabor en un plato de curry tailandés, donde el picante se equilibra con la cremosidad del coco y la fragancia de las hierbas frescas. O sumérgete en un cuenco de fideos ramen japoneses, donde los caldos ricos y los ingredientes variados se mezclan en una sinfonía de sabores.</p>
+                    <p id="textosreceta">Ingredientes:
+                        Pescado fresco: como salmón, atún, hamachi (pez limón) o camarones.
+Arroz de sushi: arroz glutinoso sazonado con vinagre de arroz, azúcar y sal.
+Alga nori: hojas de alga marina utilizadas para envolver el arroz y los ingredientes.
+Ingredientes adicionales: aguacate, pepino, cangrejo de imitación, huevo, etc.
+Wasabi: pasta verde picante.
+Jengibre encurtido: se sirve como guarnición y para limpiar el paladar.
+Salsa de soja: para mojar el sushi.
+                    </p>
+                    <p id="textosreceta1">
+                        Ingredientes:
+                        Proteína: pollo, cordero, carne de res, mariscos o vegetales.
+Especias: mezcla de especias como comino, cilantro, cúrcuma, canela, cardamomo, clavo, entre otras.
+Tomates: para crear la base de la salsa.
+Cebolla y ajo: para dar sabor y cuerpo a la salsa.
+Leche de coco o yogur: para dar cremosidad y equilibrar el picante.
+Aceite o ghee (mantequilla clarificada): para cocinar y dar sabor.
+Arroz o pan naan: acompañamiento tradicional.
+                    </p>
+                    <p id="textosreceta2">
+                        Ingredientes:
+                        Masa para dumplings: harina de trigo y agua.
+Rellenos: carne de cerdo, camarones, setas, bambú, espinacas, entre otros.
+Salsa de soja: para mojar los dumplings y otros platos.
+Salsa de ciruela: una salsa agridulce para acompañar.
+Hojas de bambú o papel de arroz: se utilizan para envolver algunos platos.
+Harina de maíz o almidón de tapioca: para hacer los dumplings y el adobo de algunos platos.
+Té: se sirve tradicionalmente con una variedad de tés chinos.
+
+                    </p>
+                    </div>
+                </div>
+            </section>
+       
+        <h2 class="titulo">Categorias</h2>
+        <section class="categorias">
+            <div class="contenedor_categorias">
+                <a href="america.html"><img id="imagenescategorias" src="plato-Bandeja-Paisa-1024x583.jpg" alt="">
+                    <h4>Cocina Latina</h4>
+                </a>
+                <a href="europa.html"><img id="imagenescategorias1" src="spanish_tapas_on_wooden_table_2.adaptive.767.1683103520005.jpg" alt="">
+                    <h4>Cocina Europea</h4>
+                </a>
+                <a href="asia.html"><img id="imagenescategorias2" src="Sushi-854x443.jpg" alt="">
+                    <h4>Cocina Asiatica</h4>
+                </a>
+                
+            </div>
+        </section>
+        </main>
+    </div>
+    <footer>
+        <p id="tel">Telefono</p>
+        <p>3053115679</p>
+        <p>Correo</p>
+        <p>Ikifood@gmail.com</p>
+        <p>Direccion</p>
+        <p>Calle 15 #109-89</p>
+    </footer>
+</body>
+</html>

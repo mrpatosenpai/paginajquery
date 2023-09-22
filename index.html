@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikifood</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquer.js"></script>
+    <script src="jseasy.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#imagenescategorias").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+    $("#imagenescategorias1").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias1").mouseout(function(){
+        $(this).animate({
+            opacity: .6
+        },500)
+    });
+    $("#imagenescategorias2").mouseover(function(){
+        $(this).animate({
+            opacity:1
+        },500)
+        });
+        $("#imagenescategorias2").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+});
+    </script>
+        <style>
+            #imagenescategorias{
+                opacity: .6;
+            }
+            #imagenescategorias1{
+                opacity: .6;
+            }
+            #imagenescategorias2{
+                opacity: .6;
+            }
+        </style>
+</head>
+<body>
+    <div class="contenedorrespon">
+        <header>
+            <nav>
+                <a class="botoneshead" href="index.html">Inicio</a>
+            </nav>
+            <section class="textoshead">
+                <h1>Aprende sobre el mundo de la gastronomia</h1>
+                <h2>atrevete a explorar nuevos sabores</h2>
+            </section>
+        </header>
+        <main>
+            <h2 class="titulo">Sobre esta pagina</h2>
+            <section class="contendor">
+                <img id="imagenes" src="encabezado_la_gastronomia_San_Andres_Providencia.jpg" alt="">
+                <div class="contenedor_text">
+                    <h3 class="sub-titulo">Deliciosos platillos</h3>
+                    <p>En esta pagina vas a encontrar diversos platillos, recetas y cultura donde te podras animar a explorar nuevos sabores de distintas partes del mundo.</p>
+                    <h3 class="sub-titulo">Recetas</h3>
+                    <p>Te invitamos en un apasionante viaje gastronómico que abarca tres continentes: América, Europa y Asia. Nuestra coleccion de recetas es un festín para los sentidos, una fusión de sabores, aromas y tradiciones culinarias que te transportarán a diferentes rincones del mundo.</p>
+                </div>
+            </section>
+            <h2 class="titulo">Categorias</h2>
+            <section class="categorias">
+                <div class="contenedor_categorias">
+                    <a href="america.html"><img id="imagenescategorias" src="plato-Bandeja-Paisa-1024x583.jpg" alt="">
+                        <h4>Cocina Latina</h4>
+                    </a>
+                    <a href="europa.html"><img id="imagenescategorias1" src="spanish_tapas_on_wooden_table_2.adaptive.767.1683103520005.jpg" alt="">
+                        <h4>Cocina Europea</h4>
+                    </a>
+                    <a href="asia.html"><img id="imagenescategorias2" src="Sushi-854x443.jpg" alt="">
+                        <h4>Cocina Asiatica</h4>
+                    </a>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p id="tel">Telefono</p>
+            <p>3053115679</p>
+            <p>Correo</p>
+            <p>Ikifood@gmail.com</p>
+            <p>Direccion</p>
+            <p>Calle 15 #109-89</p>
+        </footer>
+    </div>
+</body>
+</html>

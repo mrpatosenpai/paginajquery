@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikifood</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquer.js"></script>
+    <script src="jseasy.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#imagenescategorias").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+    $("#imagenescategorias1").mouseover(function(){
+        $(this).animate({
+            opacity: 1
+        },500)
+        });
+        $("#imagenescategorias1").mouseout(function(){
+        $(this).animate({
+            opacity: .6
+        },500)
+    });
+    $("#imagenescategorias2").mouseover(function(){
+        $(this).animate({
+            opacity:1
+        },500)
+        });
+        $("#imagenescategorias2").mouseout(function(){
+        $(this).animate({
+            opacity:.6
+        },500)
+    });
+     //recetas-animacion
+    //receta1-arrozconpollo
+    $("#receta1").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta2-Arepas
+    $("#receta2").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+
+    //receta3
+    $("#receta3").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"-50px"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft: "-100px"
+                },2500,"easeOutBounce")
+            });
+    //confingbotones
+    $("#textosreceta").hide();
+    $("#video1").hide();
+    $("#textosreceta1").hide();
+    $("#video2").hide();
+    $("#textosreceta2").hide();
+    $("#video3").hide();
+
+    $("#receta1").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video1").fadeIn(3000);
+        $("#textosreceta").fadeIn(3000);
+        $("#textosreceta1").hide();
+        $("#video2").hide();
+        $("#textosreceta2").hide();
+        $("#video3").hide();
+    });
+    $("#receta2").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textosreceta").fadeOut(1000);
+        $("#video1").fadeOut(1000);
+        $("#textoreceta2").fadeOut(1000);
+        $("#video3").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video2").fadeIn(3000);
+        $("#textosreceta1").fadeIn(3000);
+
+    });
+    $("#receta3").click(function(){
+        $("#video0").fadeOut(1000);
+        $("#textosreceta").fadeOut(1000);
+        $("#video1").fadeOut(1000);
+        $("#textosreceta1").fadeOut(1000);
+        $("#video2").fadeOut(1000);
+        $("#textoreceta0").fadeOut(1000);
+        $("#video3").fadeIn(3000);
+        $("#textosreceta2").fadeIn(3000);
+
+    });
+});
+    </script>
+    </script>
+        <style>
+            #imagenescategorias{
+                opacity: .6;
+            }
+            #imagenescategorias1{
+                opacity: .6;
+            }
+            #imagenescategorias2{
+                opacity: .6;
+            }
+            #receta1{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+        img{
+            margin-top: 20px;
+        }
+        #receta2{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        #receta3{
+            margin-left: -100px;
+            width: 300px;
+            height: 200px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="contenedorrespon">
+        <header>
+            <nav>
+                <a class="botoneshead" href="index.html">Inicio</a>
+            </nav>
+            <section class="textoshead">
+                <h1>Aprende sobre el mundo de la gastronomia</h1>
+                <h2>atrevete a explorar nuevos sabores</h2>
+            </section>
+        </header>
+        <main>
+            <h1 class="titulo">Gastronomia Europea</h1>
+            <section class="contendor">
+                <p id="textointro">En nuestra sección dedicada a la comida europea, te invitamos a explorar la rica y diversa herencia culinaria de este continente encantador. Europa es famosa por su gastronomía refinada y tradiciones culinarias que se remontan siglos atrás. En nuestra página, te sumergirás en la deliciosa esencia de la comida europea.
+
+                    Desde las románticas calles de París hasta las montañas de los Alpes suizos, cada región de Europa tiene su propia joya culinaria. Experimenta la exquisitez de la cocina italiana con auténticos platos de pasta y pizza, o disfruta de la indulgencia francesa con croissants recién horneados y queso brie.
+                    
+                    Encontrarás que la comida europea no solo es deliciosa, sino que también está cargada de historia y cultura. Desde la paella española que te transporta a la costa mediterránea hasta el schnitzel austríaco que te lleva a las pintorescas calles de Viena, cada plato cuenta una historia única.
+                    
+                    Nuestra sección de comida europea es un festín para los amantes de la buena comida y la aventura culinaria. Te invitamos a explorar recetas auténticas, consejos de cocina y una variedad de delicias que te transportarán directamente a Europa, sin salir de tu cocina. ¡Prepárate para un viaje culinario por el Viejo Continente lleno de sabor y tradición!</p>
+            </section>
+            <h1 class="titulo">Recetas</h1>
+            <section id="principal_contendor1">
+                <div id="botones_recetas">
+                    <div id="recetas">
+                        <h2 class="sub-titulo">Receta #1</h2>
+                        <img src="Pizza.jpeg" id="receta1">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #2</h2>
+                        <img src="croasant.jpeg" id="receta2">
+                    </div>
+                    <div class="recetas">
+                        <h2 class="sub-titulo">Receta #3</h2>
+                        <img src="fishchips.jpg" id="receta3">
+                    </div>
+                </div>
+                <div id="contenido_recetas">
+                    <div id="video">
+                        <iframe id="video0" width="460" height="315" src="https://www.youtube.com/embed/RexTUJOeIgk?si=ycI24rIaknHg_yGv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video1" width="460" height="315" src="https://www.youtube.com/embed/crdtrzZj3fo?si=m1e50GSNnrKD3Rs6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video2" width="460" height="315" src="https://www.youtube.com/embed/HMNmWBN2rF0?si=TeTFY--jyF-onrAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="video3" width="460" height="315" src="https://www.youtube.com/embed/CSBvpy16wvg?si=39UTZAK5zLWiMddE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div id="lista_ingredientes">
+                        <p id="textoreceta0">La comida europea es un deleite para los sentidos, una sinfonía de sabores que ha cautivado a comensales de todo el mundo. Europa es un continente que se enorgullece de su rica tradición culinaria, y por buenas razones. Desde los sabores audaces de la cocina mediterránea hasta la elegancia de la alta cocina francesa, la comida europea es una experiencia gastronómica inigualable.
+
+                            Imagina saborear un plato de pasta fresca en una pequeña trattoria en Italia, donde el tomate se funde con el aceite de oliva y el aroma del albahaca en una explosión de sabor en tu boca. O disfruta de la perfección de un croissant recién horneado en una cafetería parisina, donde cada capa crujiente se deshace en tu paladar.</p>
+                    <p id="textosreceta">Ingredientes:
+        
+                        Masa de pizza (puedes comprarla o hacerla en casa con harina, agua, levadura, sal y aceite).
+                        Salsa de tomate.
+                        Queso mozzarella.
+                        Ingredientes para la cobertura, como pepperoni, champiñones, jamón, aceitunas, pimientos, cebolla, etc.
+                        Aceite de oliva (opcional).
+                        Orégano y otras especias (opcional).</p>
+                    <p id="textosreceta1">
+                        Ingredientes:
+                        Masa de hojaldre (puedes comprarla prehecha o hacerla en casa).
+Mantequilla (para el laminado de la masa).
+Azúcar (para croissants dulces).
+Relleno opcional, como chocolate, almendras o mermelada.
+Huevo batido (para el glaseado, opcional).
+                    </p>
+                    <p id="textosreceta2">
+                        Ingredientes:
+                        Filetes de pescado blanco (como bacalao, abadejo o merluza).
+Papas (patatas) para freír.
+Harina de trigo.
+Levadura en polvo (opcional para hacer una masa de rebozado más ligera).
+Cerveza (opcional para hacer una masa de rebozado tipo tempura).
+Sal y pimienta.
+Aceite vegetal para freír.
+Vinagre maltodulce (opcional para servir con las papas).
+Guisantes (opcional para servir con el pescado y las papas).
+
+                    </p>
+                    </div>
+                </div>
+            </section>
+       
+        <h2 class="titulo">Categorias</h2>
+        <section class="categorias">
+            <div class="contenedor_categorias">
+                <a href="america.html"><img id="imagenescategorias" src="plato-Bandeja-Paisa-1024x583.jpg" alt="">
+                    <h4>Cocina Latina</h4>
+                </a>
+                <a href="europa.html"><img id="imagenescategorias1" src="spanish_tapas_on_wooden_table_2.adaptive.767.1683103520005.jpg" alt="">
+                    <h4>Cocina Europea</h4>
+                </a>
+                <a href="asia.html"><img id="imagenescategorias2" src="Sushi-854x443.jpg" alt="">
+                    <h4>Cocina Asiatica</h4>
+                </a>
+                
+            </div>
+        </section>
+        </main>
+    </div>
+    <footer>
+        <p id="tel">Telefono</p>
+        <p>3053115679</p>
+        <p>Correo</p>
+        <p>Ikifood@gmail.com</p>
+        <p>Direccion</p>
+        <p>Calle 15 #109-89</p>
+    </footer>
+</body>
+</html>
